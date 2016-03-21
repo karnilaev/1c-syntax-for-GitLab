@@ -4,7 +4,7 @@ module Rouge
   module Lexers
     class Lang1C < RegexLexer
       title "1C (BSL)"
-      desc "The 1C programming language"
+      desc "The 1C:Enterprise programming language"
       tag 'bsl'
       filenames '*.bsl', '*.os'
 
