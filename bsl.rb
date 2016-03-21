@@ -3,9 +3,9 @@
 module Rouge
   module Lexers
     class Lang1C < RegexLexer
-      title "1C"
+      title "1C (BSL)"
       desc "The 1C programming language"
-      tag '1C'
+      tag 'bsl'
       filenames '*.bsl', '*.os'
 
       KEYWORDS = /(?<=[^\wа-яё]|^)(?:
