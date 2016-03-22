@@ -1,5 +1,7 @@
 # 1c-syntax-for-GitLab
 
+[![Join the chat at https://gitter.im/karnilaev/1c-syntax-for-GitLab](https://badges.gitter.im/karnilaev/1c-syntax-for-GitLab.svg)](https://gitter.im/karnilaev/1c-syntax-for-GitLab?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 В репозитории содержится бета-версия подсветки синтаксиса в GitLab.
 
 Чтобы ее установить нужно скопировать файл bsl.rb в папку с остальными правилами подсветки синтаксиса в GitLab. Посмотреть где находятся остальные лексеры можно с помощью команды:
