@@ -58,17 +58,12 @@ module Rouge
                     | Неопределено|Undefined|Истина|True|Ложь|False|NULL
                     )\s*(?=\()/ix
 
-      DIRECTIVES =  /(?<=[^\wа-яё]|^)&(
-                       НаКлиенте((НаСервере(БезКонтекста)?)?)|AtClient((AtServer(NoContext)?)?)
-                      |НаСервере(БезКонтекста)?|AtServer(NoContext)?
-                      )(?=[^\wа-яё]|$)/ix
-
       state :root do
         rule /\n/, Text
         rule /[^\S\n]+/, Text
         rule /\/\/.*$/, Comment::Single
         rule /[\[\]:(),;]/, Punctuation
-        rule DIRECTIVES, Keyword::Declaration
+        rule /(?<=[^\wа-яё]|^)\&.*$/, Keyword::Declaration
         rule /[-+\/=<>*%=<>.?&]/, Operator
         rule /(?<=[^\wа-яё]|^)\#.*$/, Keyword::Declaration
         rule KEYWORDS, Keyword
